@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import NavBar from "./navigation/NavBar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -11,6 +13,7 @@ function App() {
       <Home />
       <About />
       <Gallery />
+      <Contact />
     </div>
   );
 }

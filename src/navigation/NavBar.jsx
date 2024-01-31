@@ -54,9 +54,10 @@ const NavBar = () => {
                   <svg
                     className="h-6 w-6"
                     fill="none"
+                    stroke="currentColor"
                     viewBox="0 0 24 24"
+                    color="green"
                     xmlns="http://www.w3.org/2000/svg"
-                    color="orange"
                   >
                     <path
                       strokeLinecap="round"
@@ -73,29 +74,29 @@ const NavBar = () => {
                   text="Home"
                   color="rgb(34 197 94)"
                   hoverColor="rgb(209 213 219)"
-                  onClick={toggleMenu()}
+                  onClick={toggleMenu}
                 />
                 <LinkWithAnimation
                   path="aboutUs"
                   text="About Us"
                   color="rgb(34 197 94)"
                   hoverColor="rgb(209 213 219)"
-                  onClick={toggleMenu()}
+                  onClick={toggleMenu}
                 />
 
                 <LinkWithAnimation
-                  path="gallery"
-                  text="Gallery"
+                  path="services"
+                  text="Services"
                   color="rgb(34 197 94)"
                   hoverColor="rgb(209 213 219)"
-                  onClick={toggleMenu()}
+                  onClick={toggleMenu}
                 />
                 <LinkWithAnimation
                   path="contact"
                   text="Contact"
                   color="rgb(34 197 94)"
                   hoverColor="rgb(209 213 219)"
-                  onClick={toggleMenu()}
+                  onClick={toggleMenu}
                 />
               </div>
             </div>
