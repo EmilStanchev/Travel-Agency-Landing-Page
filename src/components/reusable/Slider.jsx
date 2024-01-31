@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
@@ -19,35 +20,46 @@ const Slider = ({ clients }) => {
   };
 
   return (
-    <div className="relative max-w-xl mx-auto">
-      <div className="my-12">
-        <Title style={{ color: "rgb(34 197 94)" }} text="Customer Reviews " />
+    <div className="hidden md:flex flex-col max-w-xl mx-auto my-5 md:my-10 lg:my-16">
+      <div className="mb-8">
+        <Title style={{ color: "rgb(34 197 94)" }} text="Customer Reviews" />
       </div>
       <div className="flex items-center">
         <button
           onClick={prevSlide}
-          className="text-2xl text-gray-500 focus:outline-none"
+          className="hidden md:flex text-2xl text-gray-500 focus:outline-none"
         >
           <FontAwesomeIcon icon={faArrowLeft} />
         </button>
-        <div className="flex-1 mx-4 my-4">
-          <div className="overflow-hidden">
-            <div
-              className="transition-transform transform ease-in-out duration-300"
-              style={{
-                display: "flex",
-                transform: `translateX(-${currentIndex * 100}%)`,
-              }}
-            >
-              {clients.map((client) => (
-                <CommentCard key={client.id} client={client} />
-              ))}
-            </div>
+        <div className="flex-1 mx-4 my-4 overflow-hidden">
+          <div
+            className="flex transition-transform ease-in-out duration-300"
+            style={{
+              transform: `translateX(-${currentIndex * 100}%)`,
+            }}
+          >
+            {clients.map((client) => (
+              <div key={client?.id} className="flex-shrink-0 w-full flex-wrap">
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <p className="text-gray-800">{client.comment}</p>
+                  <div className="flex flex-row justify-center gap-5 mt-5">
+                    <h1 className="text-black mt-2 font-extrabold text-xl">
+                      {client.name}
+                    </h1>
+                    <img
+                      src={client.avatar}
+                      alt={`${client.name} avatar`}
+                      className="w-12 h-12 rounded-full mb-4"
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
         <button
           onClick={nextSlide}
-          className="text-2xl text-gray-500 focus:outline-none"
+          className="hidden md:flex text-2xl text-gray-500 focus:outline-none"
         >
           <FontAwesomeIcon icon={faArrowRight} />
         </button>

@@ -4,7 +4,7 @@
 const Title = ({ text, style }) => {
   return (
     <h1
-      className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-center"
+      className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-center text-wrap"
       style={style}
     >
       {text}
