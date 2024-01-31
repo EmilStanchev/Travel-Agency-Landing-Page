@@ -1,6 +1,8 @@
 # Travel Agency Landing Page 🌍✈️
 
-Welcome to my Travel Agency Landing Page repository! This is React template, crafted with the power of Tailwind CSS and React. The template contains 4 different sections [Jump to Sections](#sections).  
+Welcome to my Travel Agency Landing Page repository! This is React template, crafted with the power of Tailwind CSS and React. The template contains 4 different sections [Jump to Sections](#sections).
+<br>  
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-070A52?style=for-the-badge&logo=react&labelColor=070A52)](https://travel-agency-landing-page-pi.vercel.app/)
 
 ## Features:
 
