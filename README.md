@@ -10,25 +10,30 @@ Welcome to my Travel Agency Landing Page repository! This React web application,
 
 💼 **Destination Showcase:** Engage your audience with stunning visuals and captivating descriptions of the exotic locations and travel packages we offer.
 
+📅 **Pages:**
+<ol>
+<li>Home page</li>
+<li>Information page (About us)</li>
+<li>Gallery page</li>
+<li>Contact</li>
 
-
+</ol>
 📱 **Contact Form:** Streamline communication with user-friendly form, enhancing the overall user experience.
 
 ⚙️ **React Components:** The application is built using React components, promoting modular and maintainable code for future enhancements.
 
 ## Getting Started:
 
-1. Clone the repository: `git clone https://github.com/your-username/travel-agency-landing-page.git`
+1. Clone the repository: `https://github.com/EmilStanchev/Travel-Agency-Landing-Page.git`
 2. Install dependencies: `npm install`
 3. Run the development server: `npx run dev`
 
 ## Contributing:
 
-We welcome contributions from the community! Whether you're a seasoned developer or just getting started, your input can make a difference..
+We welcome contributions from the community! Whether you're a seasoned developer or just getting started, your input can make a difference. If you find any bugs, issues, or have suggestions for improvements, please don't hesitate to [open an issue](https://github.com/EmilStanchev/travel-agency-landing-page/issues). 
 
 ## Technologies Used:
 
 - React
 - Tailwind CSS
 
-## Showcase your travel agency in the digital realm and inspire wanderlust! Happy coding! 🚀🌟
