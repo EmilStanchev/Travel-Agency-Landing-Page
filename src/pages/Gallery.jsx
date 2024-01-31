@@ -13,7 +13,10 @@ import { clients } from "../assets/data";
 
 const Gallery = () => {
   return (
-    <div id="gallery" className="flex justify-center flex-col flex-wrap ">
+    <div
+      id="gallery"
+      className="flex justify-center flex-col flex-wrap items-center "
+    >
       <div className="flex flex-wrap">
         <Title style={{ color: "rgb(34 197 94)" }} text="Tour Gallery" />
       </div>

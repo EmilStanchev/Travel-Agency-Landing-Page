@@ -15,7 +15,7 @@ const Home = () => {
         style={{ zIndex: -1 }}
       ></div>
       <div className="text-white text-center">
-        <h1 className="text-5xl font-bold mb-4 text-green-500">
+        <h1 className="text-5xl font-bold mb-4 text-green-500 ">
           Welcome to Nature Nest
         </h1>
         <p className="text-lg mb-8 text-white">
