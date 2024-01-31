@@ -8,6 +8,7 @@ import {
   icelandTour,
   copenhagen,
 } from "../assets/gallery";
+import Slider from "../components/reusable/Slider";
 
 const Gallery = () => {
   return (
@@ -22,6 +23,9 @@ const Gallery = () => {
         <TourCard image={santoriniTour} title="Santorini Tour" />
         <TourCard image={icelandTour} title="Iceland Tour" />
         <TourCard image={copenhagen} title="Copenhagen Tour" />
+      </div>
+      <div className="flex">
+        <Slider />
       </div>
     </div>
   );
