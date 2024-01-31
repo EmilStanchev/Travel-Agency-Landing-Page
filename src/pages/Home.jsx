@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import backgroundImage from "../assets/backgroundImage.jpg";
+import backgroundImage from "../assets/images/backgroundImage.jpg";
 
 const Home = () => {
   return (
