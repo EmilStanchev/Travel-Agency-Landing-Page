@@ -1,6 +1,6 @@
 # Travel Agency Landing Page 🌍✈️
 
-Welcome to my Travel Agency Landing Page repository! This React web application, crafted with the power of Tailwind CSS, serves as the digital gateway to the breathtaking destinations and unparalleled experiences offered by our travel agency.
+Welcome to my Travel Agency Landing Page repository! This is React template, crafted with the power of Tailwind CSS and React. The template contains 4 different sections [Jump to Sections](#sections).  
 
 ## Features:
 
@@ -10,17 +10,16 @@ Welcome to my Travel Agency Landing Page repository! This React web application,
 
 💼 **Destination Showcase:** Engage your audience with stunning visuals and captivating descriptions of the exotic locations and travel packages we offer.
 
-📅 **Pages:**
-<ol>
-<li>Home page</li>
-<li>Information page (About us)</li>
-<li>Gallery page</li>
-<li>Contact</li>
-
-</ol>
 📱 **Contact Form:** Streamline communication with user-friendly form, enhancing the overall user experience.
 
 ⚙️ **React Components:** The application is built using React components, promoting modular and maintainable code for future enhancements.
+
+## Sections
+<ol>
+<li><h3>Home</h3></li>
+<li><h3>Information (About us)</h3></li>
+<li><h3>Gallery</h3></li>
+<li><h3>Contact form</h3></li>
 
 ## Getting Started:
 
