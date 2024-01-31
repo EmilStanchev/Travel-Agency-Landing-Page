@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 
-const LinkWithAnimation = ({ path, text, color, hoverColor }) => {
+const LinkWithAnimation = ({ path, text, color, hoverColor, onClick }) => {
   const [isHover, setIsHover] = useState(false);
 
   const link = {
@@ -24,6 +24,7 @@ const LinkWithAnimation = ({ path, text, color, hoverColor }) => {
       style={link}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={onClick}
     >
       {text}
     </Link>

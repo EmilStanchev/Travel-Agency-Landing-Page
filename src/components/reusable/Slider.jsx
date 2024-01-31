@@ -1,32 +1,11 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Title from "../UI/Title";
 import CommentCard from "../UI/CommentCard";
-const Slider = () => {
-  const clients = [
-    {
-      id: 1,
-      name: "John Doe",
-      comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      avatar: "https://placekitten.com/100/100",
-    },
-    {
-      id: 2,
-      name: "Jane Smith",
-      comment:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      avatar: "https://placekitten.com/101/101",
-    },
-    {
-      id: 3,
-      name: "Alice Johnson",
-      comment:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      avatar: "https://placekitten.com/102/102",
-    },
-  ];
 
+const Slider = ({ clients }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -42,7 +21,7 @@ const Slider = () => {
   return (
     <div className="relative max-w-xl mx-auto">
       <div className="my-12">
-        <Title color="red" text="Happy Clients " />
+        <Title style={{ color: "rgb(34 197 94)" }} text="Customer Reviews " />
       </div>
       <div className="flex items-center">
         <button

@@ -1,5 +1,6 @@
 import NavBar from "./navigation/NavBar";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
 
