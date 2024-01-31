@@ -114,8 +114,8 @@ const NavBar = () => {
           />
 
           <LinkWithAnimation
-            path="services"
-            text="Services"
+            path="gallery"
+            text="Gallery"
             color="rgb(34 197 94)"
             hoverColor="rgb(209 213 219)"
           />

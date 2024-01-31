@@ -1,5 +1,6 @@
 import NavBar from "./navigation/NavBar";
 import About from "./pages/About";
+import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <NavBar />
       <Home />
       <About />
+      <Gallery />
     </div>
   );
 }

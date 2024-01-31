@@ -1,3 +1,4 @@
+import Title from "../components/UI/Title";
 import ServiceCard from "../components/reusable/ServiceCard";
 import {
   faRocket,
@@ -12,9 +13,7 @@ const About = () => {
   return (
     <div id="aboutUs" className="flex flex-col gap-10 mx-8 ">
       <div className="">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center text-green-500 mb-4">
-          About us
-        </h1>
+        <Title style={{ color: "rgb(34 197 94)" }} text="About Us" />
       </div>
       <div className="flex justify-center flex-wrap gap-5 items-center">
         <ServiceCard
