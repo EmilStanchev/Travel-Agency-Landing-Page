@@ -11,20 +11,26 @@ const NavBar = () => {
   return (
     <nav className="bg-transparent fixed top-0 left-0 right-0 p-4 z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <div className=" font-extrabold text-xl text-green-500">
-          <LinkWithAnimation path="home" text="Nature Nest" />
+        <div className="hidden font-extrabold text-xl md:flex">
+          <LinkWithAnimation
+            path="home"
+            text="Nature Nest"
+            color="rgb(34 197 94)"
+            hoverColor="rgb(209 213 219)"
+          />
         </div>
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             onClick={toggleMenu}
-            className="text-white focus:outline-none focus:text-gray-300"
+            className="text-white focus:outline-none focus:text-gray-300 rounded-full bg-white p-1"
           >
             <svg
               className="h-6 w-6"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
+              color="green"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -50,6 +56,7 @@ const NavBar = () => {
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    color="green"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -62,30 +69,62 @@ const NavBar = () => {
                 </button>
               </div>
               <div className="flex flex-col space-y-4">
-                <LinkWithAnimation path="aboutUs" text="About Us" />
-                <a
-                  href="#aboutUs"
-                  className="text-gray-800 hover:text-gray-600"
-                >
-                  About
-                </a>
-                <a href="#" className="text-gray-800 hover:text-gray-600">
-                  Services
-                </a>
-                <a href="#" className="text-gray-800 hover:text-gray-600">
-                  Contact
-                </a>
+                <LinkWithAnimation
+                  path="home"
+                  text="Home"
+                  color="rgb(34 197 94)"
+                  hoverColor="rgb(209 213 219)"
+                />
+                <LinkWithAnimation
+                  path="aboutUs"
+                  text="About Us"
+                  color="rgb(34 197 94)"
+                  hoverColor="rgb(209 213 219)"
+                />
+
+                <LinkWithAnimation
+                  path="services"
+                  text="Services"
+                  color="rgb(34 197 94)"
+                  hoverColor="rgb(209 213 219)"
+                />
+                <LinkWithAnimation
+                  path="contact"
+                  text="Contact"
+                  color="rgb(34 197 94)"
+                  hoverColor="rgb(209 213 219)"
+                />
               </div>
             </div>
           </div>
         )}
 
-        <div className="hidden md:flex justify-between items-center gap-10">
-          <LinkWithAnimation path="home" text="Home" />
-          <LinkWithAnimation path="aboutUs" text="About Us" />
+        <div className="hidden lg:flex justify-between items-center gap-10">
+          <LinkWithAnimation
+            path="home"
+            text="Home"
+            color="rgb(34 197 94)"
+            hoverColor="rgb(209 213 219)"
+          />
+          <LinkWithAnimation
+            path="aboutUs"
+            text="About Us"
+            color="rgb(34 197 94)"
+            hoverColor="rgb(209 213 219)"
+          />
 
-          <LinkWithAnimation path="services" text="Services" />
-          <LinkWithAnimation path="contact" text="Contact" />
+          <LinkWithAnimation
+            path="services"
+            text="Services"
+            color="rgb(34 197 94)"
+            hoverColor="rgb(209 213 219)"
+          />
+          <LinkWithAnimation
+            path="contact"
+            text="Contact"
+            color="rgb(34 197 94)"
+            hoverColor="rgb(209 213 219)"
+          />
         </div>
       </div>
     </nav>
