@@ -10,7 +10,7 @@ import {
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-10 mx-8">
+    <div id="aboutUs" className="flex flex-col gap-10 mx-8 ">
       <div className="">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center text-green-500 mb-4">
           About us

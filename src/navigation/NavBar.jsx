@@ -1,4 +1,5 @@
 import { useState } from "react";
+import LinkWithAnimation from "../components/UI/LinkWithAnimation";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ const NavBar = () => {
     <nav className="bg-transparent fixed top-0 left-0 right-0 p-4 z-10">
       <div className="container mx-auto flex justify-between items-center">
         <div className=" font-extrabold text-xl text-green-500">
-          <a href="">Nature Nest</a>
+          <LinkWithAnimation path="home" text="Nature Nest" />
         </div>
 
         <div className="md:hidden">
@@ -36,7 +37,6 @@ const NavBar = () => {
           </button>
         </div>
 
-        {/* Animated Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden fixed top-0 left-0 right-0 bottom-0 bg-white z-10">
             <div className="container mx-auto p-4">
@@ -62,10 +62,11 @@ const NavBar = () => {
                 </button>
               </div>
               <div className="flex flex-col space-y-4">
-                <a href="#" className="text-gray-800 hover:text-gray-600">
-                  Home
-                </a>
-                <a href="#" className="text-gray-800 hover:text-gray-600">
+                <LinkWithAnimation path="aboutUs" text="About Us" />
+                <a
+                  href="#aboutUs"
+                  className="text-gray-800 hover:text-gray-600"
+                >
                   About
                 </a>
                 <a href="#" className="text-gray-800 hover:text-gray-600">
@@ -80,18 +81,11 @@ const NavBar = () => {
         )}
 
         <div className="hidden md:flex justify-between items-center gap-10">
-          <a href="#" className="text-green-500 hover:text-gray-300">
-            Home
-          </a>
-          <a href="#" className="text-green-500 hover:text-gray-300">
-            About
-          </a>
-          <a href="#" className="text-green-500 hover:text-gray-300">
-            Services
-          </a>
-          <a href="#" className="text-green-500 hover:text-gray-300">
-            Contact
-          </a>
+          <LinkWithAnimation path="home" text="Home" />
+          <LinkWithAnimation path="aboutUs" text="About Us" />
+
+          <LinkWithAnimation path="services" text="Services" />
+          <LinkWithAnimation path="contact" text="Contact" />
         </div>
       </div>
     </nav>
